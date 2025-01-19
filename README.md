@@ -1,5 +1,29 @@
-# Vue 3 + TypeScript + Vite
+### Стек который нужно использовать
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- Vue 3 (Composition API)
+- TypeScript (Запрещено использовать тип *any, object*)
+- Без дополнительных библиотек.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+### Требования
+
+- Необходимо сделать [виртуализацию](https://viktorlove.medium.com/ui-virtualization-9eeaab896913) списка (без дополнительных библиотек).
+- Поиск по этому списку.
+- Анимация при фильтрации списка.
+- Разделение Бизнес логики и Логики отображения.
+- Создать поиск по товарам из предоставленного API.
+
+API со списком продуктов (нужно вывести только 20 товаров, остальные дорисовывать по мере прокрутки пользователя).
+
+```jsx
+fetch('https://dummyjson.com/products?limit=100')
+.then(res => res.json())
+.then(console.log);
+```
+
+Пример дизайна как должен выглядеть итоговый результат (Не обязательно придерживаться дизайна, главное сохранить структуру).
+
+![select.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6bc6f855-ec90-41a3-9da8-312edbdfe6fa/67d2489a-e055-41e4-9681-d6a44d60958c/select.png)
+
+![de.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/6bc6f855-ec90-41a3-9da8-312edbdfe6fa/e1985bfd-01a1-4bc4-9fd2-57462d288701/de.png)
+
+***Будет плюсом если вы разместите задание сразу на Vercel, Netlify, Git Pages… (Любой удобный хостинг).***

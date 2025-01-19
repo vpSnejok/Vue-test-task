@@ -1,10 +1,9 @@
 {
-  "name": "pracc1",
-
+  "name": "vue_test_task",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vpSnejok.github.io/Vue-test-task",
+  "homepage": "https://vpsnejok.github.io/Vue-test-task",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
